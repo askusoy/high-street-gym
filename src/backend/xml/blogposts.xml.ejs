@@ -1,0 +1,36 @@
+<!DOCTYPE blogpost_list
+[
+<!ELEMENT blogpost_list (post_details*)>
+<!ELEMENT post_details (
+    blogpost_id, 
+    content, 
+    category, 
+    posttime
+)>
+<!ELEMENT blogpost_id (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT posttime (#PCDATA)>
+]>
+
+
+<blogpost_list>
+    <post_details>
+        <blogpost_id>1</blogpost_id>
+        <content>Lorem Ipsum</content>
+        <category>News</category>
+        <posttime>2022-12-12</posttime>
+    </post_details>
+    <post_details>
+        <blogpost_id>2</blogpost_id>
+        <content>This is a blog post for the content</content>
+        <category>Memes</category>
+        <posttime>2023-11-10</posttime>
+    </post_details>
+    <post_details>
+        <blogpost_id>3</blogpost_id>
+        <content>Testing</content>
+        <category>News</category>
+        <posttime>2023-02-22</posttime>
+    </post_details>
+</blogpost_list>

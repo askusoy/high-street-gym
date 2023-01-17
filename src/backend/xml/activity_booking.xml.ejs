@@ -1,0 +1,82 @@
+<!DOCTYPE activity_booking
+[
+<!ELEMENT activity_booking (
+    trainer,
+    date,
+    activity_duration,
+    activity_name,
+    activity_level,
+    location,
+    booked_members
+)>
+<!ELEMENT trainer (first_name, last_name)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT activity_duration (#PCDATA)>
+<!ELEMENT activity_name (#PCDATA)>
+<!ELEMENT activity_level (#PCDATA)>
+<!ELEMENT location (room_number)>
+<!ELEMENT booked_members (member*)>
+<!ELEMENT first_name (#PCDATA)>
+<!ELEMENT last_name (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT room_number (#PCDATA)>
+<!ELEMENT member (
+    id,
+    first_name,
+    last_name,
+    contact_details,
+    health_conditions
+)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT contact_details (phone, email)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT health_conditions (#PCDATA)>
+]>
+
+<activity_booking>
+    <trainer>
+        <first_name>John</first_name>
+        <last_name>Doe</last_name>
+    </trainer>
+    <date>28/02/2022</date>
+    <activity_duration>20</activity_duration>
+    <activity_name>Workout Class</activity_name>
+    <activity_level>hard</activity_level>
+    <location>
+        <room_number>10</room_number>
+    </location>
+    <booked_members>
+        <member>
+            <id>0</id>
+            <first_name>Jane</first_name>
+            <last_name>Doe</last_name>
+            <contact_details>
+                <phone>0000 0000</phone>
+                <email>tes@test.com</email>
+            </contact_details>
+            <health_conditions>None</health_conditions>
+        </member>
+        <member>
+            <id>1</id>
+            <first_name>Jack</first_name>
+            <last_name>Doe</last_name>
+            <contact_details>
+                <phone>0000 0000</phone>
+                <email>tes@test.com</email>
+            </contact_details>
+            <health_conditions>None</health_conditions>
+        </member>
+        <member>
+            <id>2</id>
+            <first_name>Jill</first_name>
+            <last_name>Doe</last_name>
+            <contact_details>
+                <phone>0000 0000</phone>
+                <email>tes@test.com</email>
+            </contact_details>
+            <health_conditions>None</health_conditions>
+        </member>
+    </booked_members>
+</activity_booking>
